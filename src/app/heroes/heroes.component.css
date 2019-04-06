@@ -1,0 +1,29 @@
+.hero-detail{
+    border: 1ps solid orange;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px;
+}
+.selected-hero{
+    border: 1ps solid orange;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.selected-hero{
+    border: 1ps solid orange;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px;
+}
+.hero-list{
+
+}
+.hero-list .hero-in-list{
+
+}
+.hero-list .hero-in-list.selected{
+    background-color: aquamarine;
+
+}

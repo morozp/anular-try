@@ -1,0 +1,29 @@
+<div> heroes works!
+  <div>
+    <button (click)="add()">Add</button>
+    <button (click)="edit()">Edit</button>
+    <button (click)="details()">Details</button>
+  </div>
+  <div class='selected-hero' *ngIf='selectedHero && selectedHeroMode === "Details"'>
+    <h2>{{selectedHero.name}} Details</h2>
+    <div><span>id: </span>{{selectedHero.id}}</div>
+    <div><span>name: </span>{{selectedHero.name}}</div>
+  </div>
+  <app-edit-hero *ngIf='selectedHero && (selectedHeroMode === "Edit" || selectedHeroMode === "Add")'>    
+  </app-edit-hero>
+  
+  <div>
+    <ol class='hero-list'>
+      <li
+        *ngFor="let hero of heroes"
+        class='hero-in-list'
+        [class.selected]="hero === selectedHero"
+        (click)="selectHero(hero)"
+      >
+      
+        <span>Id:{{hero.id}}</span> |
+        <span>Name:{{hero.name}}</span>
+      </li>
+    </ol>
+  </div>
+</div>

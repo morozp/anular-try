@@ -1,0 +1,8 @@
+<div class='edit-hero' #modeTitle="">
+  <h2>{{name}} {{id===0?'Add':'Edit'}}</h2>
+  <div><span>id: </span>{{id}}</div>
+  <div><span>name: </span>
+    <input [(ngModel)]="name" placeholder="name"/>
+  </div>
+  <button>{{JSON.stringify(modeTitle)}}</button>
+</div>
